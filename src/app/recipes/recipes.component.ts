@@ -10,9 +10,5 @@ export class RecipesComponent {
 
   detailedRecipe: Recipe;
 
-  onRecipeClicked(event){
-    this.detailedRecipe = event.recipe;
-  }
-
   constructor() { }
 }

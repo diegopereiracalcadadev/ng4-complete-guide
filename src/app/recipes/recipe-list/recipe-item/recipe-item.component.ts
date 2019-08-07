@@ -9,11 +9,11 @@ import { Recipe } from '../../recipe.model';
 export class RecipeItemComponent   {
 
   @Input() recipe: Recipe;
-  @Output() recipeClicked = new EventEmitter<{recipe: Recipe}>();
+  @Output() recipeClicked = new EventEmitter<Recipe>();
 
   constructor() { }
 
-  showDetails(event){
-    this.recipeClicked.emit({recipe: this.recipe});
+  showDetails(){
+    this.recipeClicked.emit(this.recipe);
   }
 }
