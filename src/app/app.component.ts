@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loadedFeature: string = 'recipes';//'shopping-list';
+  loadedFeature: string = 'shopping-list';//recipes
 
   onFeatureChangeTriggered(event: any){
     console.log(event);
