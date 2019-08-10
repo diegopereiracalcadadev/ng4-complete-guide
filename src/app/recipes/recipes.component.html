@@ -9,6 +9,6 @@
             *ngIf="detailedRecipe; else noneRecipeSelected"
             [recipe]="detailedRecipe"
         ></app-recipe-detail>
-        <ng-template #noneRecipeSelected>Selecione uma receita para detalhar...</ng-template>
+        <ng-template #noneRecipeSelected><p class="texto-cinza-centralizado" >Selecione uma receita para detalhar...</p></ng-template>
     </div>
 </div>
